@@ -2,24 +2,24 @@ import {defineConfig} from 'vitepress'
 
 export default defineConfig({
   title: "Diesel",
-  base: "/diesel-demo/",
+  base: "/diesel-docs/",
   description: "Diesel 是一个安全、可扩展的 Rust ORM 和查询构建器，中文文档提供详细指南和示例",
   lang: "zh-CN",
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://nonfan.github.io/diesel-demo/'
+    hostname: 'https://nonfan.github.io/diesel-docs/'
   },
   head: [
     // Favicon 图标（精简重复条目）
-    ['link', {rel: 'icon', href: '/diesel-demo/favicon.ico', sizes: "any"}],
-    ['link', {rel: 'apple-touch-icon', href: '/diesel-demo/icons/apple-touch-icon.png'}],
-    ['link', {rel: 'icon', href: '/diesel-demo/icons/icon-16.png', type: 'image/png', sizes: '16x16'}],
-    ['link', {rel: 'icon', href: '/diesel-demo/icons/icon-32.png', type: 'image/png', sizes: '32x32'}],
-    ['link', {rel: 'icon', href: '/diesel-demo/icons/icon-192.png', type: 'image/png', sizes: '192x192'}],
-    ['link', {rel: 'icon', href: '/diesel-demo/icons/icon-512.png', type: 'image/png', sizes: '512x512'}],
+    ['link', {rel: 'icon', href: '/diesel-docs/favicon.ico', sizes: "any"}],
+    ['link', {rel: 'apple-touch-icon', href: '/diesel-docs/icons/apple-touch-icon.png'}],
+    ['link', {rel: 'icon', href: '/diesel-docs/icons/icon-16.png', type: 'image/png', sizes: '16x16'}],
+    ['link', {rel: 'icon', href: '/diesel-docs/icons/icon-32.png', type: 'image/png', sizes: '32x32'}],
+    ['link', {rel: 'icon', href: '/diesel-docs/icons/icon-192.png', type: 'image/png', sizes: '192x192'}],
+    ['link', {rel: 'icon', href: '/diesel-docs/icons/icon-512.png', type: 'image/png', sizes: '512x512'}],
 
     // PWA支持
-    ['link', {rel: 'manifest', href: '/diesel-demo/site.webmanifest'}],
+    ['link', {rel: 'manifest', href: '/diesel-docs/site.webmanifest'}],
 
     // SEO 元标签
     ['meta', {
@@ -40,17 +40,17 @@ export default defineConfig({
       property: 'og:description',
       content: 'Diesel 是一个安全、可扩展的 Rust ORM 和查询构建器，中文文档提供详细指南和示例'
     }],
-    ['meta', {property: 'og:url', content: 'https://nonfan.github.io/diesel-demo/'}],
-    ['meta', {property: 'og:image', content: 'https://nonfan.github.io/diesel-demo/favicon.png'}],
+    ['meta', {property: 'og:url', content: 'https://nonfan.github.io/diesel-docs/'}],
+    ['meta', {property: 'og:image', content: 'https://nonfan.github.io/diesel-docs/favicon.png'}],
     ['meta', {name: 'twitter:card', content: 'summary_large_image'}],
     ['meta', {name: 'twitter:title', content: 'Diesel中文文档'}],
     ['meta', {
       name: 'twitter:description',
       content: 'Diesel 是一个安全、可扩展的 Rust ORM 和查询构建器，中文文档提供详细指南和示例'
     }],
-    ['meta', {name: 'twitter:image', content: 'https://nonfan.github.io/diesel-demo/favicon.png'}],
+    ['meta', {name: 'twitter:image', content: 'https://nonfan.github.io/diesel-docs/favicon.png'}],
     // 规范链接
-    ['link', {rel: 'canonical', href: 'https://nonfan.github.io/diesel-demo/'}]
+    ['link', {rel: 'canonical', href: 'https://nonfan.github.io/diesel-docs/'}]
   ],
   themeConfig: {
     siteTitle: false,
@@ -134,10 +134,10 @@ export default defineConfig({
           {
             text: "Web CRUD 实践",
             items: [
-              {text: "Postgres", link: "https://github.com/nonfan/diesel-demo/tree/db/postgres-crud"},
-              {text: "MySQL", link: "https://github.com/nonfan/diesel-demo/tree/db/mysql-crud"},
-              {text: "SQLite", link: "https://github.com/nonfan/diesel-demo/tree/db/sqlite-crud"},
-              {text: "Test 测试用例", link: "https://github.com/nonfan/diesel-demo/tree/test/sqlite-crud"},
+              {text: "Postgres", link: "https://github.com/nonfan/diesel-docs/tree/db/postgres-crud"},
+              {text: "MySQL", link: "https://github.com/nonfan/diesel-docs/tree/db/mysql-crud"},
+              {text: "SQLite", link: "https://github.com/nonfan/diesel-docs/tree/db/sqlite-crud"},
+              {text: "Test 测试用例", link: "https://github.com/nonfan/diesel-docs/tree/test/sqlite-crud"},
             ]
           }
         ]
@@ -147,10 +147,10 @@ export default defineConfig({
       provider: 'local'
     },
     socialLinks: [
-      {icon: 'github', link: 'https://github.com/nonfan/diesel-demo'}
+      {icon: 'github', link: 'https://github.com/nonfan/diesel-docs'}
     ],
     editLink: {
-      pattern: 'https://github.com/nonfan/diesel-demo/edit/docs/docs/:path',
+      pattern: 'https://github.com/nonfan/diesel-docs/edit/docs/docs/:path',
       text: "在 GitHub 上编辑此页面"
     },
     footer: {
